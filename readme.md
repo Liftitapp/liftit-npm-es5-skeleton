@@ -1,6 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f881e79421544fff94ff913412bc28ed)](https://www.codacy.com/app/Liftit/liftit-npm-es5-skeleton?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Liftitapp/liftit-npm-es5-skeleton&amp;utm_campaign=Badge_Grade)
-
-[![Build Status](https://semaphoreci.com/api/v1/liftit/liftit-npm-es5-skeleton/branches/master/shields_badge.svg)](https://semaphoreci.com/liftit/liftit-npm-es5-skeleton)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f881e79421544fff94ff913412bc28ed)](https://www.codacy.com/app/Liftit/liftit-npm-es5-skeleton?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Liftitapp/liftit-npm-es5-skeleton&amp;utm_campaign=Badge_Grade) [![Build Status](https://semaphoreci.com/api/v1/liftit/liftit-npm-es5-skeleton/branches/master/shields_badge.svg)](https://semaphoreci.com/liftit/liftit-npm-es5-skeleton)
 
 # Liftit npm ES5 Skeleton
 
@@ -9,11 +7,9 @@
 - Node optimized ES5 transpilation with [Babel](https://github.com/babel/babel)
 - Code monitoring and auto server restart with [nodemon](https://github.com/remy/nodemon)
 - ES5+ Testing via [babel-register](https://github.com/babel/babel/tree/master/packages/babel-register) with [Mocha](https://github.com/mochajs/mocha) & [Chai](https://github.com/chaijs/chai)
-- ES5 aware, minifier based on the Babel toolchain [babili](https://github.com/babel/babili)
+- ES5 aware, minifier based on rollup [rollup](https://github.com/rollup/rollup)
 - HTML Test Report via [mochawesome](https://github.com/adamgruber/mochawesome)
 - Code Linting with [ESLint](https://github.com/eslint/eslint)
-- Benchmark Testing with [benchmark.js](https://github.com/bestiejs/benchmark.js)
-- Debugging with [babel-node-debug](https://github.com/crabdude/babel-node-debug)
 - Sourcemap generation
 - Vulnerability scan via [nsp](https://github.com/nodesecurity/nsp)
 - Check for latest versions of dependencies via [ncu](https://github.com/tjunnone/npm-check-updates)
@@ -47,15 +43,6 @@
 | `npm run prepush` | runs git hooks with`Husky`
 | `npm run postmerge` | runs git hooks with`Husky`
 | `npm run postrewrite` | runs git hooks with`Husky`
-
-## Start & Debug
-
-`npm start` will run a nodemon server, it listens to any changes and display them on the console
-`npm run debug` same as `npm start` plus a port to use as you preffer
-
-Examples:
-
-If you want to run `./src/index.js` should be done like this `npm start src` without adding `index.js` to the path
 
 ## License
 
