@@ -1,3 +1,7 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f881e79421544fff94ff913412bc28ed)](https://www.codacy.com/app/Liftit/liftit-npm-es5-skeleton?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Liftitapp/liftit-npm-es5-skeleton&amp;utm_campaign=Badge_Grade)
+
+[![Build Status](https://semaphoreci.com/api/v1/liftit/liftit-npm-es5-skeleton/branches/master/shields_badge.svg)](https://semaphoreci.com/liftit/liftit-npm-es5-skeleton)
+
 # Liftit npm ES5 Skeleton
 
 ## Features
