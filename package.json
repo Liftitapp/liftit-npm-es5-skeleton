@@ -10,7 +10,7 @@
     "benchmark:watch": "nodemon $2 --exec babel-node benchmark",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
-    "build": "babel -s true src -d dist",
+    "build": "rollup -c",
     "test": "mocha -c -S -R spec 'tests' --compilers js:babel-register --check-leaks",
     "test:watch": "mocha -w -c -S -R spec 'tests' --compilers js:babel-register --check-leaks",
     "test:reporter-list": "mocha -c -S -R list 'tests' --compilers js:babel-register --check-leaks",
@@ -28,6 +28,7 @@
     "type": "git",
     "url": "git+https://github.com/Liftitapp/liftit-npm-es5-skeleton.git"
   },
+
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -50,7 +51,13 @@
     "mochawesome": "^2.3.0",
     "nodemon": "^1.11.0",
     "npm-check-updates": "^2.12.1",
-    "nsp": "^2.6.3"
+    "nsp": "^2.6.3",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
   },
   "license": "MIT"
 }
