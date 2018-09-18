@@ -7,7 +7,9 @@
 /template.md
 /local
 /templates
+/reports
 /typings
+/.idea
 node_modules
 .nyc_output
 npm-debug.log

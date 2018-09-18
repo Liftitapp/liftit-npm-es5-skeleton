@@ -1,13 +1,13 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f881e79421544fff94ff913412bc28ed)](https://www.codacy.com/app/Liftit/liftit-npm-es5-skeleton?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Liftitapp/liftit-npm-es5-skeleton&amp;utm_campaign=Badge_Grade) [![Build Status](https://semaphoreci.com/api/v1/liftit/liftit-npm-es5-skeleton/branches/master/shields_badge.svg)](https://semaphoreci.com/liftit/liftit-npm-es5-skeleton)
 
-# Liftit npm ES5 Skeleton
+# Liftit npm ES6 Skeleton
 
 ## Features
 
-- Node optimized ES5 transpilation with [Babel](https://github.com/babel/babel)
+- Node optimized ES6 transpilation with [Babel](https://github.com/babel/babel)
 - Code monitoring and auto server restart with [nodemon](https://github.com/remy/nodemon)
-- ES5+ Testing via [babel-register](https://github.com/babel/babel/tree/master/packages/babel-register) with [Mocha](https://github.com/mochajs/mocha) & [Chai](https://github.com/chaijs/chai)
-- ES5 aware, minifier based on rollup [rollup](https://github.com/rollup/rollup)
+- ES6+ Testing via [babel-register](https://github.com/babel/babel/tree/master/packages/babel-register) with [Mocha](https://github.com/mochajs/mocha) & [Chai](https://github.com/chaijs/chai)
+- ES6 aware, minifier based on rollup [rollup](https://github.com/rollup/rollup)
 - HTML Test Report via [mochawesome](https://github.com/adamgruber/mochawesome)
 - Code Linting with [ESLint](https://github.com/eslint/eslint)
 - Sourcemap generation
@@ -28,8 +28,6 @@
 | --- | --- |
 | `npm start src` | executes the project with live reload enabled via `nodemon` and transpiled with `babel|node`
 | `npm run debug src` | executes the project with debug flag enabled
-| `npm run benchmark` | runs benchmark tests with `benchmark.js`
-| `npm run benchmark:watch` | runs benchmark tests with `benchmark.js` and watch for file changes
 | `npm run lint` | code linting with `eslint`
 | `npm run lint:fix` | fixes all problems automatically with `eslint`
 | `npm test` | runs tests with `mocha` and `chai` with spec as reporter
@@ -37,13 +35,14 @@
 | `npm run test:reporter` | runs tests with `mocha` and `chai` with `list` reporter
 | `npm run test:export` | exports tests results as html files in the `./reports` folder via `mochasome`
 | `npm run build` | transpiles and minifies ES6+ code and create sourcemaps with `babel` & `babili`
-| `npm run scan:security` | runs vulnerability tests via the node security platform `nsp`
 | `npm run scan:updates` | checks for latest versions of dependencies via `ncu`
 | `npm run precommit` | runs git hooks with`Husky`
 | `npm run prepush` | runs git hooks with`Husky`
 | `npm run postmerge` | runs git hooks with`Husky`
 | `npm run postrewrite` | runs git hooks with`Husky`
 
+
+`nsp` was removed because it is embed in lastest versions of `npm`, to use to , please update `npm` https://blog.npmjs.org/post/175511531085/the-node-security-platform-service-is-shutting
 ## License
 
 MIT ©

@@ -12,14 +12,7 @@ export default {
   plugins: [
     babel({
       babelrc: false,
-      presets: [
-        [
-          'es2015',
-          {
-            modules: false
-          }
-        ]
-      ]
+      presets: ['@babel/preset-env', '@babel/preset-react']
     }),
     commonjs({
       include: 'node_modules/**'
